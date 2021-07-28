@@ -15,6 +15,8 @@
 		D928351026A71E97003E2DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928350E26A71E97003E2DC7 /* LaunchScreen.storyboard */; };
 		D928351B26A71E97003E2DC7 /* SatisBeerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928351A26A71E97003E2DC7 /* SatisBeerTests.swift */; };
 		D928352626A71E97003E2DC7 /* SatisBeerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D928352526A71E97003E2DC7 /* SatisBeerUITests.swift */; };
+		D957C37526B15AC60098ABEF /* SettingsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D957C37426B15AC60098ABEF /* SettingsFile.swift */; };
+		D957C37726B184C30098ABEF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D957C37626B184C30098ABEF /* HomeViewController.swift */; };
 		D978F9D526B0072D00B5B3C5 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F9D426B0072D00B5B3C5 /* Beer.swift */; };
 		D978F9DA26B0084400B5B3C5 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D978F9D926B0084400B5B3C5 /* ApiService.swift */; };
 		D978F9E426B00FA500B5B3C5 /* Klein-ExtraLight-Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D978F9DC26B00FA500B5B3C5 /* Klein-ExtraLight-Italic-trial.ttf */; };
@@ -60,6 +62,8 @@
 		D928352126A71E97003E2DC7 /* SatisBeerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SatisBeerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D928352526A71E97003E2DC7 /* SatisBeerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatisBeerUITests.swift; sourceTree = "<group>"; };
 		D928352726A71E97003E2DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D957C37426B15AC60098ABEF /* SettingsFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFile.swift; sourceTree = "<group>"; };
+		D957C37626B184C30098ABEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D978F9D426B0072D00B5B3C5 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		D978F9D926B0084400B5B3C5 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		D978F9DC26B00FA500B5B3C5 /* Klein-ExtraLight-Italic-trial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Klein-ExtraLight-Italic-trial.ttf"; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		D928350226A71E96003E2DC7 /* SatisBeer */ = {
 			isa = PBXGroup;
 			children = (
+				D957C37326B15AB00098ABEF /* Globals */,
 				D978F9EE26B0191400B5B3C5 /* Views */,
 				D978F9D826B0083500B5B3C5 /* Services */,
 				D978F9D726B007B900B5B3C5 /* ViewControllers */,
@@ -155,6 +160,14 @@
 			path = SatisBeerUITests;
 			sourceTree = "<group>";
 		};
+		D957C37326B15AB00098ABEF /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				D957C37426B15AC60098ABEF /* SettingsFile.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
 		D978F9D626B0079000B5B3C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +179,7 @@
 		D978F9D726B007B900B5B3C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D957C37626B184C30098ABEF /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -340,10 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D957C37526B15AC60098ABEF /* SettingsFile.swift in Sources */,
 				D928350826A71E96003E2DC7 /* HomeView.swift in Sources */,
 				D978F9DA26B0084400B5B3C5 /* ApiService.swift in Sources */,
 				D928350426A71E96003E2DC7 /* AppDelegate.swift in Sources */,
 				D928350626A71E96003E2DC7 /* SceneDelegate.swift in Sources */,
+				D957C37726B184C30098ABEF /* HomeViewController.swift in Sources */,
 				D978F9D526B0072D00B5B3C5 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
